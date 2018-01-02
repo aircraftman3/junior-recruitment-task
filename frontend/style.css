@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    background-color: #e9f0f4;
+}
+
+p {
+    background-color: #2e3641;
+    padding-left: 43px;
+    margin: 0px;
+    color: #dae4eb;
+    font-family: Lato ;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+ul {
+    color: #2e3641;
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0px;
+    font-family: Lato ;
+
+}
+
+.main-list {
+    width: 320px;
+
+}
+.main-list img {
+    float: right;
+    padding-right: 13px;
+}
