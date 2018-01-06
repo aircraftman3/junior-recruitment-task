@@ -4,18 +4,6 @@ body {
     background-color: #e9f0f4;
 }
 
-li:first-child {
-    background-color: #2e3641;
-    padding-bottom: 11px;
-    padding-top: 14px;
-    margin: 0;
-    color: #dae4eb;
-    font-family: Lato ;
-    font-weight: bold;
-    font-size: 14px;
-    border-bottom: 0;
-}
-
 ul {
     color: #2e3641;
     background-color: #fff;
@@ -27,20 +15,67 @@ ul {
 
 }
 
+li:first-child {
+    background-color: #2e3641;
+    /*padding-bottom: 11px;*/
+    /*padding-top: 14px;*/
+    margin: 0;
+    color: #dae4eb;
+    font-family: Lato ;
+    font-weight: bold;
+    font-size: 14px;
+    /*border-bottom: 0;*/
+}
+
 li {
-    padding-bottom: 9px;
-    padding-top: 10px;
     border-style: solid;
     border-width: 1px;
     border-color: #dbdbdb;
     border-top: 0;
 
+    display: flex;
+    justify-content: space-between;
+}
+
+li > div {
+    padding: 10px;
+}
+
+.checkbox {
+    border-right: 1px solid #f2e3df;
+}
+
+.label {
+    border-left: 1px solid #f2e3df;
+    flex: 1;
+    margin-left: 2px;
+}
+
+.trash {
 }
 
 #main-list {
     width: 320px;
 }
 
-li img {
-    float: right;
+.checkbox-none {
+    padding-right: 30px;
+    border-right: 1px solid #454f5c;
 }
+
+.label-none {
+    border-left: 1px solid #454f5c;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.li-checked {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.notChecked {border: 1px solid black;}
+
+.checked {border: 5px solid red;}
